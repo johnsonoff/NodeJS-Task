@@ -4,8 +4,6 @@ const mongoose = require("mongoose")
 const Emp = require("./model/Employee")
 const router=require("./routes/EmpRoutes")
 const dotenv = require("dotenv")
-
-
 dotenv.config()
 app.use(express.json());
 app.use("/emp",router)
